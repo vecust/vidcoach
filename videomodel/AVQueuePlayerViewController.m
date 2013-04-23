@@ -150,6 +150,9 @@ UIButton *cancelButton;
     else if (_isWatchingMe)
     {
         if (_segmentSelected) {
+            [self getPracticeVideoSegment:_subCategory];
+            NSLog(@"inst: %d",[instVideoNames count]);
+            NSLog(@"recorded: %d",[recordedVideoNames count]);
             if([instVideoNames count] != [recordedVideoNames count])
             {
                 cantWatchAllAlert = [[UIAlertView alloc] initWithTitle:@"You have not \n practiced this yet." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
