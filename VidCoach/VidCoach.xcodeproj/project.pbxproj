@@ -1,0 +1,1128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C223A98162142480027B99E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C223A97162142480027B99E /* UIKit.framework */; };
+		2C223A9A162142480027B99E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C223A99162142480027B99E /* Foundation.framework */; };
+		2C223A9C162142480027B99E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C223A9B162142480027B99E /* CoreGraphics.framework */; };
+		2C223AA2162142480027B99E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C223AA0162142480027B99E /* InfoPlist.strings */; };
+		2C223AA4162142480027B99E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C223AA3162142480027B99E /* main.m */; };
+		2C223AA8162142480027B99E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C223AA7162142480027B99E /* AppDelegate.m */; };
+		2C223AAB162142480027B99E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C223AA9162142480027B99E /* MainStoryboard.storyboard */; };
+		2C223AAE162142480027B99E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C223AAD162142480027B99E /* ViewController.m */; };
+		2C5BD01C1671C67800A68B9E /* RedCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD01B1671C67800A68B9E /* RedCustomAlertView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C5BD0291671C82800A68B9E /* GreenCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD0201671C82800A68B9E /* GreenCustomAlertView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C5BD02A1671C82800A68B9E /* TSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD0221671C82800A68B9E /* TSAlertView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C5BD02B1671C82800A68B9E /* TSAlertViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0231671C82800A68B9E /* TSAlertViewBackground.png */; };
+		2C5BD02C1671C82800A68B9E /* TSAlertViewBackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0241671C82800A68B9E /* TSAlertViewBackground2.png */; };
+		2C5BD02D1671C82800A68B9E /* TSAlertViewButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0251671C82800A68B9E /* TSAlertViewButtonBackground.png */; };
+		2C5BD02E1671C82800A68B9E /* TSAlertViewButtonBackground_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0261671C82800A68B9E /* TSAlertViewButtonBackground_Highlighted.png */; };
+		2C5BD02F1671C82800A68B9E /* TSAlertViewCancelButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0271671C82800A68B9E /* TSAlertViewCancelButtonBackground.png */; };
+		2C5BD0301671C82800A68B9E /* TSAlertViewMessageListViewShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BD0281671C82800A68B9E /* TSAlertViewMessageListViewShadow.png */; };
+		2C819F5C163307600071576D /* Prompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C819F5B163307600071576D /* Prompt.m */; };
+		2C819F60163317150071576D /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C819F5F163317150071576D /* NSMutableArray_Shuffling.m */; };
+		2C87CA3616D6019000EC4294 /* 1greeting-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA2E16D6019000EC4294 /* 1greeting-question-Kerri.mp4 */; };
+		2C87CA3716D6019000EC4294 /* 2resume-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA2F16D6019000EC4294 /* 2resume-question-Kerri.mp4 */; };
+		2C87CA3816D6019000EC4294 /* 3aboutYourself-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3016D6019000EC4294 /* 3aboutYourself-question-Kerri.mp4 */; };
+		2C87CA3916D6019000EC4294 /* 4strengths-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3116D6019000EC4294 /* 4strengths-question-Kerri.mp4 */; };
+		2C87CA3A16D6019000EC4294 /* 5whyHireYou-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3216D6019000EC4294 /* 5whyHireYou-question-Kerri.mp4 */; };
+		2C87CA3B16D6019000EC4294 /* 6anyQuestions-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3316D6019000EC4294 /* 6anyQuestions-question-Kerri.mp4 */; };
+		2C87CA3C16D6019000EC4294 /* 7farewell-NO-SHAKE-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3416D6019000EC4294 /* 7farewell-NO-SHAKE-question-Kerri.mp4 */; };
+		2C87CA3D16D6019000EC4294 /* 7farewell-SHAKE-question-Kerri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3516D6019000EC4294 /* 7farewell-SHAKE-question-Kerri.mp4 */; };
+		2C87CA4716D601B200EC4294 /* 1greeting-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA3F16D601B200EC4294 /* 1greeting-answer-Amanda.mp4 */; };
+		2C87CA4816D601B200EC4294 /* 3aboutYourself1-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4016D601B200EC4294 /* 3aboutYourself1-answer-Amanda.mp4 */; };
+		2C87CA4916D601B200EC4294 /* 3aboutYourself2-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4116D601B200EC4294 /* 3aboutYourself2-answer-Amanda.mp4 */; };
+		2C87CA4A16D601B200EC4294 /* 2resume-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4216D601B200EC4294 /* 2resume-answer-Amanda.mp4 */; };
+		2C87CA4B16D601B200EC4294 /* 4strengths-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4316D601B200EC4294 /* 4strengths-answer-Amanda.mp4 */; };
+		2C87CA4C16D601B200EC4294 /* 5whyHireYou-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4416D601B200EC4294 /* 5whyHireYou-answer-Amanda.mp4 */; };
+		2C87CA4D16D601B200EC4294 /* 6myQuestion-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4516D601B200EC4294 /* 6myQuestion-answer-Amanda.mp4 */; };
+		2C87CA4E16D601B200EC4294 /* 7farewell-answer-Amanda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C87CA4616D601B200EC4294 /* 7farewell-answer-Amanda.mp4 */; };
+		2C89F8A7171B5B5F008D0FDD /* 1greeting-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF01715586900A917B0 /* 1greeting-question-karen.mp4 */; };
+		2C89F8A8171B5B64008D0FDD /* 2resume-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF11715586900A917B0 /* 2resume-question-karen.mp4 */; };
+		2C89F8A9171B5B67008D0FDD /* 3aboutYourself-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF21715586900A917B0 /* 3aboutYourself-question-karen.mp4 */; };
+		2C89F8AA171B5B6A008D0FDD /* 4customerService-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF31715586900A917B0 /* 4customerService-question-karen.mp4 */; };
+		2C89F8AB171B5B70008D0FDD /* 5unhappyCustomer-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF41715586900A917B0 /* 5unhappyCustomer-question-karen.mp4 */; };
+		2C89F8AC171B5B70008D0FDD /* 6positiveChange-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF51715586900A917B0 /* 6positiveChange-question-karen.mp4 */; };
+		2C89F8AD171B5B70008D0FDD /* 7whyHire-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF61715586900A917B0 /* 7whyHire-question-karen.mp4 */; };
+		2C89F8AE171B5B70008D0FDD /* 8anyQuestions-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF71715586900A917B0 /* 8anyQuestions-question-karen.mp4 */; };
+		2C89F8AF171B5B70008D0FDD /* 9farewell-question-karen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF81715586900A917B0 /* 9farewell-question-karen.mp4 */; };
+		2C89F8B0171B5B79008D0FDD /* 1greeting-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AE71715585800A917B0 /* 1greeting-answer-kathy.mp4 */; };
+		2C89F8B1171B5B79008D0FDD /* 2resume-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AE81715585800A917B0 /* 2resume-answer-kathy.mp4 */; };
+		2C89F8B2171B5B79008D0FDD /* 3aboutYourself-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AE91715585800A917B0 /* 3aboutYourself-answer-kathy.mp4 */; };
+		2C89F8B3171B5B79008D0FDD /* 4customerService-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AEA1715585800A917B0 /* 4customerService-answer-kathy.mp4 */; };
+		2C89F8B4171B5B79008D0FDD /* 5unhappyCustomer-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AEB1715585800A917B0 /* 5unhappyCustomer-answer-kathy.mp4 */; };
+		2C89F8B5171B5B79008D0FDD /* 6positiveChange-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AEC1715585800A917B0 /* 6positiveChange-answer-kathy.mp4 */; };
+		2C89F8B6171B5B79008D0FDD /* 7whyHire-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AED1715585800A917B0 /* 7whyHire-answer-kathy.mp4 */; };
+		2C89F8B7171B5B79008D0FDD /* 8anyQuestions-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AEE1715585800A917B0 /* 8anyQuestions-answer-kathy.mp4 */; };
+		2C89F8B8171B5B79008D0FDD /* 9farewell-answer-kathy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AEF1715585800A917B0 /* 9farewell-answer-kathy.mp4 */; };
+		2C89F8B9171B5B86008D0FDD /* 1greeting-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AF91715587F00A917B0 /* 1greeting-question-john.mp4 */; };
+		2C89F8BA171B5B86008D0FDD /* 2resume-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFA1715587F00A917B0 /* 2resume-question-john.mp4 */; };
+		2C89F8BB171B5B86008D0FDD /* 3experience-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFB1715587F00A917B0 /* 3experience-question-john.mp4 */; };
+		2C89F8BC171B5B86008D0FDD /* 4previousPosition-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFC1715587F00A917B0 /* 4previousPosition-question-john.mp4 */; };
+		2C89F8BD171B5B86008D0FDD /* 5leavingPrevious-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFD1715587F00A917B0 /* 5leavingPrevious-question-john.mp4 */; };
+		2C89F8BE171B5B86008D0FDD /* 6coworkers-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFE1715587F00A917B0 /* 6coworkers-question-john.mp4 */; };
+		2C89F8BF171B5B86008D0FDD /* 7likeAboutHealthcare-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1AFF1715587F00A917B0 /* 7likeAboutHealthcare-question-john.mp4 */; };
+		2C89F8C0171B5B86008D0FDD /* 8helpOnBreak-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B001715587F00A917B0 /* 8helpOnBreak-question-john.mp4 */; };
+		2C89F8C1171B5B86008D0FDD /* 9tallMeATime-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B011715587F00A917B0 /* 9tallMeATime-question-john.mp4 */; };
+		2C89F8C2171B5B86008D0FDD /* 10nightsAndWeekends-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B021715587F00A917B0 /* 10nightsAndWeekends-question-john.mp4 */; };
+		2C89F8C3171B5B86008D0FDD /* 11dressCode-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B031715587F00A917B0 /* 11dressCode-question-john.mp4 */; };
+		2C89F8C4171B5B86008D0FDD /* 12schoolValues-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B041715587F00A917B0 /* 12schoolValues-question-john.mp4 */; };
+		2C89F8C5171B5B86008D0FDD /* 13whyHire-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B051715587F00A917B0 /* 13whyHire-question-john.mp4 */; };
+		2C89F8C6171B5B86008D0FDD /* 14anyQuestions-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B061715587F00A917B0 /* 14anyQuestions-question-john.mp4 */; };
+		2C89F8C7171B5B86008D0FDD /* 15farewell-question-john.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B071715587F00A917B0 /* 15farewell-question-john.mp4 */; };
+		2C89F8C8171B5B8C008D0FDD /* 1greeting-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B081715589600A917B0 /* 1greeting-answer-jeff.mp4 */; };
+		2C89F8C9171B5B8C008D0FDD /* 2resume-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B091715589600A917B0 /* 2resume-answer-jeff.mp4 */; };
+		2C89F8CA171B5B8C008D0FDD /* 3experience-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0A1715589600A917B0 /* 3experience-answer-jeff.mp4 */; };
+		2C89F8CB171B5B8C008D0FDD /* 4previousPosition-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0B1715589600A917B0 /* 4previousPosition-answer-jeff.mp4 */; };
+		2C89F8CC171B5B8C008D0FDD /* 5leavingPrevious-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0C1715589600A917B0 /* 5leavingPrevious-answer-jeff.mp4 */; };
+		2C89F8CD171B5B8C008D0FDD /* 6coworkers-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0D1715589600A917B0 /* 6coworkers-answer-jeff.mp4 */; };
+		2C89F8CE171B5B8C008D0FDD /* 7likeAboutHealthcare-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0E1715589600A917B0 /* 7likeAboutHealthcare-answer-jeff.mp4 */; };
+		2C89F8CF171B5B8C008D0FDD /* 8helpOnBreak-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B0F1715589600A917B0 /* 8helpOnBreak-answer-jeff.mp4 */; };
+		2C89F8D0171B5B8C008D0FDD /* 9tellMeATime-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B101715589600A917B0 /* 9tellMeATime-answer-jeff.mp4 */; };
+		2C89F8D1171B5B8C008D0FDD /* 10nightsAndWeekends-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B111715589600A917B0 /* 10nightsAndWeekends-answer-jeff.mp4 */; };
+		2C89F8D2171B5B8C008D0FDD /* 11dressCode-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B121715589600A917B0 /* 11dressCode-answer-jeff.mp4 */; };
+		2C89F8D3171B5B8C008D0FDD /* 12schoolValues-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B131715589600A917B0 /* 12schoolValues-answer-jeff.mp4 */; };
+		2C89F8D4171B5B8C008D0FDD /* 13whyHire-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B141715589600A917B0 /* 13whyHire-answer-jeff.mp4 */; };
+		2C89F8D5171B5B8C008D0FDD /* 14anyQuestions-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B151715589600A917B0 /* 14anyQuestions-answer-jeff.mp4 */; };
+		2C89F8D6171B5B8C008D0FDD /* 15farewell-answer-jeff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B161715589600A917B0 /* 15farewell-answer-jeff.mp4 */; };
+		2C89F8D7171B5B98008D0FDD /* 1greeting-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B17171558B300A917B0 /* 1greeting-question-matt.mp4 */; };
+		2C89F8D8171B5B98008D0FDD /* 2resume-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B18171558B300A917B0 /* 2resume-question-matt.mp4 */; };
+		2C89F8D9171B5B98008D0FDD /* 3aboutYourself-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B19171558B300A917B0 /* 3aboutYourself-question-matt.mp4 */; };
+		2C89F8DA171B5B98008D0FDD /* 4restaurantExperience-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1A171558B300A917B0 /* 4restaurantExperience-question-matt.mp4 */; };
+		2C89F8DB171B5B98008D0FDD /* 5describeATime-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1B171558B300A917B0 /* 5describeATime-question-matt.mp4 */; };
+		2C89F8DC171B5B98008D0FDD /* 6team-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1C171558B300A917B0 /* 6team-question-matt.mp4 */; };
+		2C89F8DD171B5B98008D0FDD /* 7whyHireYou-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1D171558B300A917B0 /* 7whyHireYou-question-matt.mp4 */; };
+		2C89F8DE171B5B98008D0FDD /* 8anyQuestions-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1E171558B300A917B0 /* 8anyQuestions-question-matt.mp4 */; };
+		2C89F8DF171B5B98008D0FDD /* 9farewell-question-matt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B1F171558B300A917B0 /* 9farewell-question-matt.mp4 */; };
+		2C89F8E0171B5B9E008D0FDD /* 1greeting-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B20171558C800A917B0 /* 1greeting-answer-bobby.mp4 */; };
+		2C89F8E1171B5B9E008D0FDD /* 2resume-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B21171558C800A917B0 /* 2resume-answer-bobby.mp4 */; };
+		2C89F8E2171B5B9E008D0FDD /* 3aboutYourself-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B22171558C800A917B0 /* 3aboutYourself-answer-bobby.mp4 */; };
+		2C89F8E3171B5B9E008D0FDD /* 4restaurantExperience-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B23171558C800A917B0 /* 4restaurantExperience-answer-bobby.mp4 */; };
+		2C89F8E4171B5B9E008D0FDD /* 5describeATime-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B24171558C800A917B0 /* 5describeATime-answer-bobby.mp4 */; };
+		2C89F8E5171B5B9E008D0FDD /* 6team-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B25171558C800A917B0 /* 6team-answer-bobby.mp4 */; };
+		2C89F8E6171B5B9E008D0FDD /* 7whyHireYou-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B26171558C800A917B0 /* 7whyHireYou-answer-bobby.mp4 */; };
+		2C89F8E7171B5B9E008D0FDD /* 8anyQuestions-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B27171558C800A917B0 /* 8anyQuestions-answer-bobby.mp4 */; };
+		2C89F8E8171B5B9E008D0FDD /* 9farewell-answer-bobby.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B28171558C800A917B0 /* 9farewell-answer-bobby.mp4 */; };
+		2C89F8E9171B5BA9008D0FDD /* 1greeting-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B29171558E400A917B0 /* 1greeting-question-steve.mp4 */; };
+		2C89F8EA171B5BA9008D0FDD /* 2resume-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2A171558E400A917B0 /* 2resume-question-steve.mp4 */; };
+		2C89F8EB171B5BA9008D0FDD /* 3experience-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2B171558E400A917B0 /* 3experience-question-steve.mp4 */; };
+		2C89F8EC171B5BA9008D0FDD /* 4whyRetail-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2C171558E400A917B0 /* 4whyRetail-question-steve.mp4 */; };
+		2C89F8ED171B5BA9008D0FDD /* 5customerService-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2D171558E400A917B0 /* 5customerService-question-steve.mp4 */; };
+		2C89F8EE171B5BA9008D0FDD /* 6upselling-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2E171558E400A917B0 /* 6upselling-question-steve.mp4 */; };
+		2C89F8EF171B5BA9008D0FDD /* 7schoolValues-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B2F171558E400A917B0 /* 7schoolValues-question-steve.mp4 */; };
+		2C89F8F0171B5BA9008D0FDD /* 8whyHire-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B30171558E400A917B0 /* 8whyHire-question-steve.mp4 */; };
+		2C89F8F1171B5BA9008D0FDD /* 9anyQuestions-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B31171558E400A917B0 /* 9anyQuestions-question-steve.mp4 */; };
+		2C89F8F2171B5BA9008D0FDD /* 11farewell-question-steve.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B33171558E400A917B0 /* 11farewell-question-steve.mp4 */; };
+		2C89F8F3171B5BAF008D0FDD /* 1greeting-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B34171558EF00A917B0 /* 1greeting-answer-jessica.mp4 */; };
+		2C89F8F4171B5BAF008D0FDD /* 2resume-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B35171558EF00A917B0 /* 2resume-answer-jessica.mp4 */; };
+		2C89F8F5171B5BAF008D0FDD /* 3experience-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B36171558EF00A917B0 /* 3experience-answer-jessica.mp4 */; };
+		2C89F8F6171B5BAF008D0FDD /* 4whyRetail-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B37171558EF00A917B0 /* 4whyRetail-answer-jessica.mp4 */; };
+		2C89F8F7171B5BAF008D0FDD /* 5customerService-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B38171558EF00A917B0 /* 5customerService-answer-jessica.mp4 */; };
+		2C89F8F8171B5BAF008D0FDD /* 6upselling-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B39171558EF00A917B0 /* 6upselling-answer-jessica.mp4 */; };
+		2C89F8F9171B5BAF008D0FDD /* 7schoolValues-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B3A171558EF00A917B0 /* 7schoolValues-answer-jessica.mp4 */; };
+		2C89F8FA171B5BAF008D0FDD /* 8whyHire-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B3B171558EF00A917B0 /* 8whyHire-answer-jessica.mp4 */; };
+		2C89F8FB171B5BAF008D0FDD /* 9anyQuestions-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BF171B252B005DE854 /* 9anyQuestions-answer-jessica.mp4 */; };
+		2C89F8FC171B5BAF008D0FDD /* 11farewell-answer-jessica.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B3E171558EF00A917B0 /* 11farewell-answer-jessica.mp4 */; };
+		2C89F8FD171B5BB5008D0FDD /* 1greeting-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B1171B2350005DE854 /* 1greeting-answer-nithin.mp4 */; };
+		2C89F8FE171B5BB5008D0FDD /* 2resume-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B2171B2350005DE854 /* 2resume-answer-nithin.mp4 */; };
+		2C89F8FF171B5BB5008D0FDD /* 3experience-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B3171B2350005DE854 /* 3experience-answer-nithin.mp4 */; };
+		2C89F900171B5BB5008D0FDD /* 4enjoy-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B4171B2350005DE854 /* 4enjoy-answer-nithin.mp4 */; };
+		2C89F901171B5BB5008D0FDD /* 5leaving-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B5171B2350005DE854 /* 5leaving-answer-nithin.mp4 */; };
+		2C89F902171B5BB5008D0FDD /* 6coworkers-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B6171B2350005DE854 /* 6coworkers-answer-nithin.mp4 */; };
+		2C89F903171B5BB5008D0FDD /* 7whatDoYouLike-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B7171B2350005DE854 /* 7whatDoYouLike-answer-nithin.mp4 */; };
+		2C89F904171B5BB5008D0FDD /* 8customerService-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B8171B2350005DE854 /* 8customerService-answer-nithin.mp4 */; };
+		2C89F905171B5BB5008D0FDD /* 9upselling-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189B9171B2350005DE854 /* 9upselling-answer-nithin.mp4 */; };
+		2C89F906171B5BB5008D0FDD /* 10tellMeATime-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BA171B2350005DE854 /* 10tellMeATime-answer-nithin.mp4 */; };
+		2C89F907171B5BB5008D0FDD /* 11schoolValues-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BB171B2350005DE854 /* 11schoolValues-answer-nithin.mp4 */; };
+		2C89F908171B5BB5008D0FDD /* 12whyHireYou-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BC171B2350005DE854 /* 12whyHireYou-answer-nithin.mp4 */; };
+		2C89F909171B5BB5008D0FDD /* 13anyQuestions-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BD171B2350005DE854 /* 13anyQuestions-answer-nithin.mp4 */; };
+		2C89F90A171B5BB5008D0FDD /* 14farewell-answer-nithin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4189BE171B2350005DE854 /* 14farewell-answer-nithin.mp4 */; };
+		2C89F90B171B5BBB008D0FDD /* 1greeting-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B3F1715591D00A917B0 /* 1greeting-question-gillian.mp4 */; };
+		2C89F90C171B5BBB008D0FDD /* 2resume-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B401715591D00A917B0 /* 2resume-question-gillian.mp4 */; };
+		2C89F90D171B5BBB008D0FDD /* 3experience-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B411715591D00A917B0 /* 3experience-question-gillian.mp4 */; };
+		2C89F90E171B5BBB008D0FDD /* 4enjoy-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B421715591D00A917B0 /* 4enjoy-question-gillian.mp4 */; };
+		2C89F90F171B5BBB008D0FDD /* 5leaving-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B431715591D00A917B0 /* 5leaving-question-gillian.mp4 */; };
+		2C89F910171B5BBB008D0FDD /* 6coworkers-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B441715591D00A917B0 /* 6coworkers-question-gillian.mp4 */; };
+		2C89F911171B5BBB008D0FDD /* 7whatDoYouLike-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B451715591D00A917B0 /* 7whatDoYouLike-question-gillian.mp4 */; };
+		2C89F912171B5BBB008D0FDD /* 8customerService-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B461715591D00A917B0 /* 8customerService-question-gillian.mp4 */; };
+		2C89F913171B5BBB008D0FDD /* 9upselling-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B471715591D00A917B0 /* 9upselling-question-gillian.mp4 */; };
+		2C89F914171B5BBB008D0FDD /* 10tellMeATime-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B481715591D00A917B0 /* 10tellMeATime-question-gillian.mp4 */; };
+		2C89F915171B5BBB008D0FDD /* 11schoolValues-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B491715591D00A917B0 /* 11schoolValues-question-gillian.mp4 */; };
+		2C89F916171B5BBB008D0FDD /* 12whyHireYou-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B4A1715591D00A917B0 /* 12whyHireYou-question-gillian.mp4 */; };
+		2C89F917171B5BBB008D0FDD /* 13anyQuestions-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B4B1715591D00A917B0 /* 13anyQuestions-question-gillian.mp4 */; };
+		2C89F918171B5BBB008D0FDD /* 14farewell-question-gillian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1B4C1715591D00A917B0 /* 14farewell-question-gillian.mp4 */; };
+		2CAE490116689C200038EAAB /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE490016689C200038EAAB /* CategoryViewController.m */; };
+		2CB7AD7A162C74C200694173 /* AVQueuePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7AD77162C74C200694173 /* AVQueuePlayerViewController.m */; };
+		2CB7AD7B162C74C200694173 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7AD79162C74C200694173 /* PlayerView.m */; };
+		2CB7AD7E162C74FA00694173 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB7AD7D162C74FA00694173 /* Default-568h@2x.png */; };
+		2CB7AD80162C769A00694173 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB7AD7F162C769A00694173 /* AVFoundation.framework */; };
+		2CB7B63E1668AAFC00F732A7 /* SubCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B63D1668AAFC00F732A7 /* SubCategoryViewController.m */; };
+		2CB7B6421668B53000F732A7 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B6411668B53000F732A7 /* ActionViewController.m */; };
+		2CB7B6451668B87400F732A7 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B6441668B87400F732A7 /* SegmentViewController.m */; };
+		2CB7B6481668C46800F732A7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B6471668C46700F732A7 /* SettingsViewController.m */; };
+		2CEE4035167316A700A26285 /* TSAlertViewMessageListViewShadow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CEE4034167316A700A26285 /* TSAlertViewMessageListViewShadow2.png */; };
+		2CF6BE1A1668F61000DF3005 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6BE191668F61000DF3005 /* Settings.plist */; };
+		2CF6BE1C1668FC5C00DF3005 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6BE1B1668FC5C00DF3005 /* Settings.bundle */; };
+		6F0BCF211641831E000F4874 /* Segment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0BCF201641831D000F4874 /* Segment.m */; };
+		6F5550801625D26E002D09E4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F55507F1625D26E002D09E4 /* libsqlite3.0.dylib */; };
+		B02B63011656D0D7002F06DD /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08F4D0A1656C13E001AB436 /* RecordVideoViewController.m */; };
+		B0699ED116A0837200760D3D /* cog_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECA16A0837200760D3D /* cog_01.png */; };
+		B0699ED216A0837200760D3D /* cog_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECB16A0837200760D3D /* cog_01@2x.png */; };
+		B0699ED316A0837200760D3D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECC16A0837200760D3D /* Default.png */; };
+		B0699ED416A0837200760D3D /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECD16A0837200760D3D /* house.png */; };
+		B0699ED516A0837200760D3D /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECE16A0837200760D3D /* house@2x.png */; };
+		B0699ED616A0837200760D3D /* VidCoach_icon_xcode-ipod.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ECF16A0837200760D3D /* VidCoach_icon_xcode-ipod.png */; };
+		B0699ED716A0837200760D3D /* VidCoach_icon_xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = B0699ED016A0837200760D3D /* VidCoach_icon_xcode.png */; };
+		B08F4D041656C0AF001AB436 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08F4D031656C0AF001AB436 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C223A93162142480027B99E /* VidCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C223A97162142480027B99E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C223A99162142480027B99E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C223A9B162142480027B99E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C223A9F162142480027B99E /* VidCoach-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VidCoach-Info.plist"; sourceTree = "<group>"; };
+		2C223AA1162142480027B99E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C223AA3162142480027B99E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C223AA5162142480027B99E /* VidCoach-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VidCoach-Prefix.pch"; sourceTree = "<group>"; };
+		2C223AA6162142480027B99E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C223AA7162142480027B99E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C223AAA162142480027B99E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2C223AAC162142480027B99E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C223AAD162142480027B99E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C4189B1171B2350005DE854 /* 1greeting-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B2171B2350005DE854 /* 2resume-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B3171B2350005DE854 /* 3experience-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B4171B2350005DE854 /* 4enjoy-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4enjoy-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B5171B2350005DE854 /* 5leaving-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5leaving-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B6171B2350005DE854 /* 6coworkers-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6coworkers-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B7171B2350005DE854 /* 7whatDoYouLike-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whatDoYouLike-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B8171B2350005DE854 /* 8customerService-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8customerService-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189B9171B2350005DE854 /* 9upselling-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9upselling-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BA171B2350005DE854 /* 10tellMeATime-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10tellMeATime-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BB171B2350005DE854 /* 11schoolValues-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11schoolValues-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BC171B2350005DE854 /* 12whyHireYou-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12whyHireYou-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BD171B2350005DE854 /* 13anyQuestions-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "13anyQuestions-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BE171B2350005DE854 /* 14farewell-answer-nithin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14farewell-answer-nithin.mp4"; sourceTree = "<group>"; };
+		2C4189BF171B252B005DE854 /* 9anyQuestions-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9anyQuestions-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C5BD01A1671C67800A68B9E /* RedCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCustomAlertView.h; sourceTree = "<group>"; };
+		2C5BD01B1671C67800A68B9E /* RedCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCustomAlertView.m; sourceTree = "<group>"; };
+		2C5BD01F1671C82800A68B9E /* GreenCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GreenCustomAlertView.h; path = TSAlertView/GreenCustomAlertView.h; sourceTree = "<group>"; };
+		2C5BD0201671C82800A68B9E /* GreenCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GreenCustomAlertView.m; path = TSAlertView/GreenCustomAlertView.m; sourceTree = "<group>"; };
+		2C5BD0211671C82800A68B9E /* TSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAlertView.h; sourceTree = "<group>"; };
+		2C5BD0221671C82800A68B9E /* TSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAlertView.m; sourceTree = "<group>"; };
+		2C5BD0231671C82800A68B9E /* TSAlertViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewBackground.png; sourceTree = "<group>"; };
+		2C5BD0241671C82800A68B9E /* TSAlertViewBackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewBackground2.png; sourceTree = "<group>"; };
+		2C5BD0251671C82800A68B9E /* TSAlertViewButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewButtonBackground.png; sourceTree = "<group>"; };
+		2C5BD0261671C82800A68B9E /* TSAlertViewButtonBackground_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewButtonBackground_Highlighted.png; sourceTree = "<group>"; };
+		2C5BD0271671C82800A68B9E /* TSAlertViewCancelButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewCancelButtonBackground.png; sourceTree = "<group>"; };
+		2C5BD0281671C82800A68B9E /* TSAlertViewMessageListViewShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewMessageListViewShadow.png; sourceTree = "<group>"; };
+		2C7C1AE71715585800A917B0 /* 1greeting-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AE81715585800A917B0 /* 2resume-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AE91715585800A917B0 /* 3aboutYourself-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AEA1715585800A917B0 /* 4customerService-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4customerService-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AEB1715585800A917B0 /* 5unhappyCustomer-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5unhappyCustomer-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AEC1715585800A917B0 /* 6positiveChange-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6positiveChange-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AED1715585800A917B0 /* 7whyHire-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whyHire-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AEE1715585800A917B0 /* 8anyQuestions-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8anyQuestions-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AEF1715585800A917B0 /* 9farewell-answer-kathy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9farewell-answer-kathy.mp4"; sourceTree = "<group>"; };
+		2C7C1AF01715586900A917B0 /* 1greeting-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF11715586900A917B0 /* 2resume-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF21715586900A917B0 /* 3aboutYourself-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF31715586900A917B0 /* 4customerService-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4customerService-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF41715586900A917B0 /* 5unhappyCustomer-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5unhappyCustomer-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF51715586900A917B0 /* 6positiveChange-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6positiveChange-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF61715586900A917B0 /* 7whyHire-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whyHire-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF71715586900A917B0 /* 8anyQuestions-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8anyQuestions-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF81715586900A917B0 /* 9farewell-question-karen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9farewell-question-karen.mp4"; sourceTree = "<group>"; };
+		2C7C1AF91715587F00A917B0 /* 1greeting-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFA1715587F00A917B0 /* 2resume-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFB1715587F00A917B0 /* 3experience-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFC1715587F00A917B0 /* 4previousPosition-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4previousPosition-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFD1715587F00A917B0 /* 5leavingPrevious-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5leavingPrevious-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFE1715587F00A917B0 /* 6coworkers-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6coworkers-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1AFF1715587F00A917B0 /* 7likeAboutHealthcare-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7likeAboutHealthcare-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B001715587F00A917B0 /* 8helpOnBreak-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8helpOnBreak-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B011715587F00A917B0 /* 9tallMeATime-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9tallMeATime-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B021715587F00A917B0 /* 10nightsAndWeekends-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10nightsAndWeekends-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B031715587F00A917B0 /* 11dressCode-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11dressCode-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B041715587F00A917B0 /* 12schoolValues-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12schoolValues-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B051715587F00A917B0 /* 13whyHire-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "13whyHire-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B061715587F00A917B0 /* 14anyQuestions-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14anyQuestions-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B071715587F00A917B0 /* 15farewell-question-john.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "15farewell-question-john.mp4"; sourceTree = "<group>"; };
+		2C7C1B081715589600A917B0 /* 1greeting-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B091715589600A917B0 /* 2resume-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0A1715589600A917B0 /* 3experience-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0B1715589600A917B0 /* 4previousPosition-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4previousPosition-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0C1715589600A917B0 /* 5leavingPrevious-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5leavingPrevious-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0D1715589600A917B0 /* 6coworkers-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6coworkers-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0E1715589600A917B0 /* 7likeAboutHealthcare-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7likeAboutHealthcare-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B0F1715589600A917B0 /* 8helpOnBreak-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8helpOnBreak-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B101715589600A917B0 /* 9tellMeATime-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9tellMeATime-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B111715589600A917B0 /* 10nightsAndWeekends-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10nightsAndWeekends-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B121715589600A917B0 /* 11dressCode-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11dressCode-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B131715589600A917B0 /* 12schoolValues-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12schoolValues-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B141715589600A917B0 /* 13whyHire-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "13whyHire-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B151715589600A917B0 /* 14anyQuestions-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14anyQuestions-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B161715589600A917B0 /* 15farewell-answer-jeff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "15farewell-answer-jeff.mp4"; sourceTree = "<group>"; };
+		2C7C1B17171558B300A917B0 /* 1greeting-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B18171558B300A917B0 /* 2resume-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B19171558B300A917B0 /* 3aboutYourself-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1A171558B300A917B0 /* 4restaurantExperience-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4restaurantExperience-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1B171558B300A917B0 /* 5describeATime-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5describeATime-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1C171558B300A917B0 /* 6team-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6team-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1D171558B300A917B0 /* 7whyHireYou-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whyHireYou-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1E171558B300A917B0 /* 8anyQuestions-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8anyQuestions-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B1F171558B300A917B0 /* 9farewell-question-matt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9farewell-question-matt.mp4"; sourceTree = "<group>"; };
+		2C7C1B20171558C800A917B0 /* 1greeting-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B21171558C800A917B0 /* 2resume-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B22171558C800A917B0 /* 3aboutYourself-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B23171558C800A917B0 /* 4restaurantExperience-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4restaurantExperience-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B24171558C800A917B0 /* 5describeATime-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5describeATime-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B25171558C800A917B0 /* 6team-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6team-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B26171558C800A917B0 /* 7whyHireYou-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whyHireYou-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B27171558C800A917B0 /* 8anyQuestions-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8anyQuestions-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B28171558C800A917B0 /* 9farewell-answer-bobby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9farewell-answer-bobby.mp4"; sourceTree = "<group>"; };
+		2C7C1B29171558E400A917B0 /* 1greeting-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2A171558E400A917B0 /* 2resume-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2B171558E400A917B0 /* 3experience-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2C171558E400A917B0 /* 4whyRetail-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4whyRetail-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2D171558E400A917B0 /* 5customerService-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5customerService-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2E171558E400A917B0 /* 6upselling-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6upselling-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B2F171558E400A917B0 /* 7schoolValues-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7schoolValues-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B30171558E400A917B0 /* 8whyHire-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8whyHire-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B31171558E400A917B0 /* 9anyQuestions-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9anyQuestions-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B33171558E400A917B0 /* 11farewell-question-steve.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11farewell-question-steve.mp4"; sourceTree = "<group>"; };
+		2C7C1B34171558EF00A917B0 /* 1greeting-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B35171558EF00A917B0 /* 2resume-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B36171558EF00A917B0 /* 3experience-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B37171558EF00A917B0 /* 4whyRetail-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4whyRetail-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B38171558EF00A917B0 /* 5customerService-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5customerService-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B39171558EF00A917B0 /* 6upselling-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6upselling-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B3A171558EF00A917B0 /* 7schoolValues-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7schoolValues-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B3B171558EF00A917B0 /* 8whyHire-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8whyHire-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B3E171558EF00A917B0 /* 11farewell-answer-jessica.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11farewell-answer-jessica.mp4"; sourceTree = "<group>"; };
+		2C7C1B3F1715591D00A917B0 /* 1greeting-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B401715591D00A917B0 /* 2resume-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B411715591D00A917B0 /* 3experience-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3experience-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B421715591D00A917B0 /* 4enjoy-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4enjoy-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B431715591D00A917B0 /* 5leaving-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5leaving-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B441715591D00A917B0 /* 6coworkers-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6coworkers-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B451715591D00A917B0 /* 7whatDoYouLike-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7whatDoYouLike-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B461715591D00A917B0 /* 8customerService-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8customerService-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B471715591D00A917B0 /* 9upselling-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9upselling-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B481715591D00A917B0 /* 10tellMeATime-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10tellMeATime-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B491715591D00A917B0 /* 11schoolValues-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "11schoolValues-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B4A1715591D00A917B0 /* 12whyHireYou-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12whyHireYou-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B4B1715591D00A917B0 /* 13anyQuestions-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "13anyQuestions-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C7C1B4C1715591D00A917B0 /* 14farewell-question-gillian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14farewell-question-gillian.mp4"; sourceTree = "<group>"; };
+		2C819F5A163307600071576D /* Prompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prompt.h; sourceTree = "<group>"; };
+		2C819F5B163307600071576D /* Prompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prompt.m; sourceTree = "<group>"; };
+		2C819F5E163317150071576D /* NSMutableArray_Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_Shuffling.h; sourceTree = "<group>"; };
+		2C819F5F163317150071576D /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
+		2C87CA2E16D6019000EC4294 /* 1greeting-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA2F16D6019000EC4294 /* 2resume-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3016D6019000EC4294 /* 3aboutYourself-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3116D6019000EC4294 /* 4strengths-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4strengths-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3216D6019000EC4294 /* 5whyHireYou-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5whyHireYou-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3316D6019000EC4294 /* 6anyQuestions-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6anyQuestions-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3416D6019000EC4294 /* 7farewell-NO-SHAKE-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7farewell-NO-SHAKE-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3516D6019000EC4294 /* 7farewell-SHAKE-question-Kerri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7farewell-SHAKE-question-Kerri.mp4"; sourceTree = "<group>"; };
+		2C87CA3F16D601B200EC4294 /* 1greeting-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1greeting-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4016D601B200EC4294 /* 3aboutYourself1-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself1-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4116D601B200EC4294 /* 3aboutYourself2-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3aboutYourself2-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4216D601B200EC4294 /* 2resume-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2resume-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4316D601B200EC4294 /* 4strengths-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4strengths-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4416D601B200EC4294 /* 5whyHireYou-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5whyHireYou-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4516D601B200EC4294 /* 6myQuestion-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6myQuestion-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2C87CA4616D601B200EC4294 /* 7farewell-answer-Amanda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7farewell-answer-Amanda.mp4"; sourceTree = "<group>"; };
+		2CAE48FF16689C200038EAAB /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		2CAE490016689C200038EAAB /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		2CB7AD76162C74C200694173 /* AVQueuePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVQueuePlayerViewController.h; sourceTree = "<group>"; };
+		2CB7AD77162C74C200694173 /* AVQueuePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVQueuePlayerViewController.m; sourceTree = "<group>"; };
+		2CB7AD78162C74C200694173 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		2CB7AD79162C74C200694173 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		2CB7AD7D162C74FA00694173 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2CB7AD7F162C769A00694173 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2CB7B63C1668AAFC00F732A7 /* SubCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryViewController.h; sourceTree = "<group>"; };
+		2CB7B63D1668AAFC00F732A7 /* SubCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryViewController.m; sourceTree = "<group>"; };
+		2CB7B6401668B53000F732A7 /* ActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		2CB7B6411668B53000F732A7 /* ActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		2CB7B6431668B87400F732A7 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		2CB7B6441668B87400F732A7 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		2CB7B6461668C46700F732A7 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2CB7B6471668C46700F732A7 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2CEE4034167316A700A26285 /* TSAlertViewMessageListViewShadow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSAlertViewMessageListViewShadow2.png; sourceTree = "<group>"; };
+		2CF6BE191668F61000DF3005 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Settings.plist; path = ../Settings.plist; sourceTree = "<group>"; };
+		2CF6BE1B1668FC5C00DF3005 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		6F0BCF1F1641831D000F4874 /* Segment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segment.h; sourceTree = "<group>"; };
+		6F0BCF201641831D000F4874 /* Segment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Segment.m; sourceTree = "<group>"; };
+		6F55507F1625D26E002D09E4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B0699ECA16A0837200760D3D /* cog_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cog_01.png; path = ../cog_01.png; sourceTree = "<group>"; };
+		B0699ECB16A0837200760D3D /* cog_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cog_01@2x.png"; path = "../cog_01@2x.png"; sourceTree = "<group>"; };
+		B0699ECC16A0837200760D3D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		B0699ECD16A0837200760D3D /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = ../house.png; sourceTree = "<group>"; };
+		B0699ECE16A0837200760D3D /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@2x.png"; path = "../house@2x.png"; sourceTree = "<group>"; };
+		B0699ECF16A0837200760D3D /* VidCoach_icon_xcode-ipod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VidCoach_icon_xcode-ipod.png"; path = "../VidCoach_icon_xcode-ipod.png"; sourceTree = "<group>"; };
+		B0699ED016A0837200760D3D /* VidCoach_icon_xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VidCoach_icon_xcode.png; path = ../VidCoach_icon_xcode.png; sourceTree = "<group>"; };
+		B08F4D031656C0AF001AB436 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B08F4D091656C13E001AB436 /* RecordVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordVideoViewController.h; sourceTree = "<group>"; };
+		B08F4D0A1656C13E001AB436 /* RecordVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C223A90162142480027B99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08F4D041656C0AF001AB436 /* MobileCoreServices.framework in Frameworks */,
+				2CB7AD80162C769A00694173 /* AVFoundation.framework in Frameworks */,
+				6F5550801625D26E002D09E4 /* libsqlite3.0.dylib in Frameworks */,
+				2C223A98162142480027B99E /* UIKit.framework in Frameworks */,
+				2C223A9A162142480027B99E /* Foundation.framework in Frameworks */,
+				2C223A9C162142480027B99E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C223A88162142480027B99E = {
+			isa = PBXGroup;
+			children = (
+				2CB7AD7D162C74FA00694173 /* Default-568h@2x.png */,
+				2C223A9D162142480027B99E /* videomodel */,
+				2C223A96162142480027B99E /* Frameworks */,
+				2C223A94162142480027B99E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C223A94162142480027B99E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C223A93162142480027B99E /* VidCoach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C223A96162142480027B99E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B08F4D031656C0AF001AB436 /* MobileCoreServices.framework */,
+				6F55507F1625D26E002D09E4 /* libsqlite3.0.dylib */,
+				2CB7AD7F162C769A00694173 /* AVFoundation.framework */,
+				2C223A97162142480027B99E /* UIKit.framework */,
+				2C223A99162142480027B99E /* Foundation.framework */,
+				2C223A9B162142480027B99E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C223A9D162142480027B99E /* videomodel */ = {
+			isa = PBXGroup;
+			children = (
+				2CAE48FF16689C200038EAAB /* CategoryViewController.h */,
+				2CAE490016689C200038EAAB /* CategoryViewController.m */,
+				2CB7B6461668C46700F732A7 /* SettingsViewController.h */,
+				2CB7B6471668C46700F732A7 /* SettingsViewController.m */,
+				2CF6BE191668F61000DF3005 /* Settings.plist */,
+				2CB7B63C1668AAFC00F732A7 /* SubCategoryViewController.h */,
+				2CB7B63D1668AAFC00F732A7 /* SubCategoryViewController.m */,
+				2CB7B6401668B53000F732A7 /* ActionViewController.h */,
+				2CB7B6411668B53000F732A7 /* ActionViewController.m */,
+				2CB7B6431668B87400F732A7 /* SegmentViewController.h */,
+				2CB7B6441668B87400F732A7 /* SegmentViewController.m */,
+				B08F4D091656C13E001AB436 /* RecordVideoViewController.h */,
+				B08F4D0A1656C13E001AB436 /* RecordVideoViewController.m */,
+				2CB7AD76162C74C200694173 /* AVQueuePlayerViewController.h */,
+				2CB7AD77162C74C200694173 /* AVQueuePlayerViewController.m */,
+				2C5BD01E1671C82800A68B9E /* TSAlertView */,
+				2C5BD01F1671C82800A68B9E /* GreenCustomAlertView.h */,
+				2C5BD0201671C82800A68B9E /* GreenCustomAlertView.m */,
+				2C5BD01A1671C67800A68B9E /* RedCustomAlertView.h */,
+				2C5BD01B1671C67800A68B9E /* RedCustomAlertView.m */,
+				2C819F5E163317150071576D /* NSMutableArray_Shuffling.h */,
+				6F0BCF1F1641831D000F4874 /* Segment.h */,
+				6F0BCF201641831D000F4874 /* Segment.m */,
+				2C819F5F163317150071576D /* NSMutableArray_Shuffling.m */,
+				2C819F5A163307600071576D /* Prompt.h */,
+				2C819F5B163307600071576D /* Prompt.m */,
+				2CB7AD78162C74C200694173 /* PlayerView.h */,
+				2CB7AD79162C74C200694173 /* PlayerView.m */,
+				2C223AA6162142480027B99E /* AppDelegate.h */,
+				2C223AA7162142480027B99E /* AppDelegate.m */,
+				2C223AA9162142480027B99E /* MainStoryboard.storyboard */,
+				2C223AAC162142480027B99E /* ViewController.h */,
+				2C223AAD162142480027B99E /* ViewController.m */,
+				2C223A9E162142480027B99E /* Supporting Files */,
+			);
+			path = videomodel;
+			sourceTree = "<group>";
+		};
+		2C223A9E162142480027B99E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AE41715582100A917B0 /* Hospitality */,
+				2C7C1AE11715580900A917B0 /* Healthcare */,
+				2C7C1ADE171557E800A917B0 /* Food Service */,
+				2C7C1ADB171557BC00A917B0 /* Retail w/o exp */,
+				2C7C1AD81715579400A917B0 /* Retail w/exp */,
+				2C87CA2B16D6013900EC4294 /* General Interview */,
+				B0699ECA16A0837200760D3D /* cog_01.png */,
+				B0699ECB16A0837200760D3D /* cog_01@2x.png */,
+				B0699ECC16A0837200760D3D /* Default.png */,
+				B0699ECD16A0837200760D3D /* house.png */,
+				B0699ECE16A0837200760D3D /* house@2x.png */,
+				B0699ECF16A0837200760D3D /* VidCoach_icon_xcode-ipod.png */,
+				B0699ED016A0837200760D3D /* VidCoach_icon_xcode.png */,
+				2C223A9F162142480027B99E /* VidCoach-Info.plist */,
+				2CF6BE1B1668FC5C00DF3005 /* Settings.bundle */,
+				2C223AA0162142480027B99E /* InfoPlist.strings */,
+				2C223AA3162142480027B99E /* main.m */,
+				2C223AA5162142480027B99E /* VidCoach-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C5BD01E1671C82800A68B9E /* TSAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BD0211671C82800A68B9E /* TSAlertView.h */,
+				2C5BD0221671C82800A68B9E /* TSAlertView.m */,
+				2C5BD0231671C82800A68B9E /* TSAlertViewBackground.png */,
+				2C5BD0241671C82800A68B9E /* TSAlertViewBackground2.png */,
+				2C5BD0251671C82800A68B9E /* TSAlertViewButtonBackground.png */,
+				2C5BD0261671C82800A68B9E /* TSAlertViewButtonBackground_Highlighted.png */,
+				2C5BD0271671C82800A68B9E /* TSAlertViewCancelButtonBackground.png */,
+				2C5BD0281671C82800A68B9E /* TSAlertViewMessageListViewShadow.png */,
+				2CEE4034167316A700A26285 /* TSAlertViewMessageListViewShadow2.png */,
+			);
+			path = TSAlertView;
+			sourceTree = "<group>";
+		};
+		2C7C1AD81715579400A917B0 /* Retail w/exp */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1ADA171557B300A917B0 /* Nithin */,
+				2C7C1AD9171557A800A917B0 /* Gillian */,
+			);
+			name = "Retail w/exp";
+			sourceTree = "<group>";
+		};
+		2C7C1AD9171557A800A917B0 /* Gillian */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B3F1715591D00A917B0 /* 1greeting-question-gillian.mp4 */,
+				2C7C1B401715591D00A917B0 /* 2resume-question-gillian.mp4 */,
+				2C7C1B411715591D00A917B0 /* 3experience-question-gillian.mp4 */,
+				2C7C1B421715591D00A917B0 /* 4enjoy-question-gillian.mp4 */,
+				2C7C1B431715591D00A917B0 /* 5leaving-question-gillian.mp4 */,
+				2C7C1B441715591D00A917B0 /* 6coworkers-question-gillian.mp4 */,
+				2C7C1B451715591D00A917B0 /* 7whatDoYouLike-question-gillian.mp4 */,
+				2C7C1B461715591D00A917B0 /* 8customerService-question-gillian.mp4 */,
+				2C7C1B471715591D00A917B0 /* 9upselling-question-gillian.mp4 */,
+				2C7C1B481715591D00A917B0 /* 10tellMeATime-question-gillian.mp4 */,
+				2C7C1B491715591D00A917B0 /* 11schoolValues-question-gillian.mp4 */,
+				2C7C1B4A1715591D00A917B0 /* 12whyHireYou-question-gillian.mp4 */,
+				2C7C1B4B1715591D00A917B0 /* 13anyQuestions-question-gillian.mp4 */,
+				2C7C1B4C1715591D00A917B0 /* 14farewell-question-gillian.mp4 */,
+			);
+			name = Gillian;
+			sourceTree = "<group>";
+		};
+		2C7C1ADA171557B300A917B0 /* Nithin */ = {
+			isa = PBXGroup;
+			children = (
+				2C4189B1171B2350005DE854 /* 1greeting-answer-nithin.mp4 */,
+				2C4189B2171B2350005DE854 /* 2resume-answer-nithin.mp4 */,
+				2C4189B3171B2350005DE854 /* 3experience-answer-nithin.mp4 */,
+				2C4189B4171B2350005DE854 /* 4enjoy-answer-nithin.mp4 */,
+				2C4189B5171B2350005DE854 /* 5leaving-answer-nithin.mp4 */,
+				2C4189B6171B2350005DE854 /* 6coworkers-answer-nithin.mp4 */,
+				2C4189B7171B2350005DE854 /* 7whatDoYouLike-answer-nithin.mp4 */,
+				2C4189B8171B2350005DE854 /* 8customerService-answer-nithin.mp4 */,
+				2C4189B9171B2350005DE854 /* 9upselling-answer-nithin.mp4 */,
+				2C4189BA171B2350005DE854 /* 10tellMeATime-answer-nithin.mp4 */,
+				2C4189BB171B2350005DE854 /* 11schoolValues-answer-nithin.mp4 */,
+				2C4189BC171B2350005DE854 /* 12whyHireYou-answer-nithin.mp4 */,
+				2C4189BD171B2350005DE854 /* 13anyQuestions-answer-nithin.mp4 */,
+				2C4189BE171B2350005DE854 /* 14farewell-answer-nithin.mp4 */,
+			);
+			name = Nithin;
+			sourceTree = "<group>";
+		};
+		2C7C1ADB171557BC00A917B0 /* Retail w/o exp */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1ADD171557D700A917B0 /* Steve */,
+				2C7C1ADC171557C900A917B0 /* Jessica */,
+			);
+			name = "Retail w/o exp";
+			sourceTree = "<group>";
+		};
+		2C7C1ADC171557C900A917B0 /* Jessica */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B34171558EF00A917B0 /* 1greeting-answer-jessica.mp4 */,
+				2C7C1B35171558EF00A917B0 /* 2resume-answer-jessica.mp4 */,
+				2C7C1B36171558EF00A917B0 /* 3experience-answer-jessica.mp4 */,
+				2C7C1B37171558EF00A917B0 /* 4whyRetail-answer-jessica.mp4 */,
+				2C7C1B38171558EF00A917B0 /* 5customerService-answer-jessica.mp4 */,
+				2C7C1B39171558EF00A917B0 /* 6upselling-answer-jessica.mp4 */,
+				2C7C1B3A171558EF00A917B0 /* 7schoolValues-answer-jessica.mp4 */,
+				2C7C1B3B171558EF00A917B0 /* 8whyHire-answer-jessica.mp4 */,
+				2C4189BF171B252B005DE854 /* 9anyQuestions-answer-jessica.mp4 */,
+				2C7C1B3E171558EF00A917B0 /* 11farewell-answer-jessica.mp4 */,
+			);
+			name = Jessica;
+			sourceTree = "<group>";
+		};
+		2C7C1ADD171557D700A917B0 /* Steve */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B29171558E400A917B0 /* 1greeting-question-steve.mp4 */,
+				2C7C1B2A171558E400A917B0 /* 2resume-question-steve.mp4 */,
+				2C7C1B2B171558E400A917B0 /* 3experience-question-steve.mp4 */,
+				2C7C1B2C171558E400A917B0 /* 4whyRetail-question-steve.mp4 */,
+				2C7C1B2D171558E400A917B0 /* 5customerService-question-steve.mp4 */,
+				2C7C1B2E171558E400A917B0 /* 6upselling-question-steve.mp4 */,
+				2C7C1B2F171558E400A917B0 /* 7schoolValues-question-steve.mp4 */,
+				2C7C1B30171558E400A917B0 /* 8whyHire-question-steve.mp4 */,
+				2C7C1B31171558E400A917B0 /* 9anyQuestions-question-steve.mp4 */,
+				2C7C1B33171558E400A917B0 /* 11farewell-question-steve.mp4 */,
+			);
+			name = Steve;
+			sourceTree = "<group>";
+		};
+		2C7C1ADE171557E800A917B0 /* Food Service */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AE01715580500A917B0 /* Matt */,
+				2C7C1ADF171557EE00A917B0 /* Aaron */,
+			);
+			name = "Food Service";
+			sourceTree = "<group>";
+		};
+		2C7C1ADF171557EE00A917B0 /* Aaron */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B20171558C800A917B0 /* 1greeting-answer-bobby.mp4 */,
+				2C7C1B21171558C800A917B0 /* 2resume-answer-bobby.mp4 */,
+				2C7C1B22171558C800A917B0 /* 3aboutYourself-answer-bobby.mp4 */,
+				2C7C1B23171558C800A917B0 /* 4restaurantExperience-answer-bobby.mp4 */,
+				2C7C1B24171558C800A917B0 /* 5describeATime-answer-bobby.mp4 */,
+				2C7C1B25171558C800A917B0 /* 6team-answer-bobby.mp4 */,
+				2C7C1B26171558C800A917B0 /* 7whyHireYou-answer-bobby.mp4 */,
+				2C7C1B27171558C800A917B0 /* 8anyQuestions-answer-bobby.mp4 */,
+				2C7C1B28171558C800A917B0 /* 9farewell-answer-bobby.mp4 */,
+			);
+			name = Aaron;
+			sourceTree = "<group>";
+		};
+		2C7C1AE01715580500A917B0 /* Matt */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B17171558B300A917B0 /* 1greeting-question-matt.mp4 */,
+				2C7C1B18171558B300A917B0 /* 2resume-question-matt.mp4 */,
+				2C7C1B19171558B300A917B0 /* 3aboutYourself-question-matt.mp4 */,
+				2C7C1B1A171558B300A917B0 /* 4restaurantExperience-question-matt.mp4 */,
+				2C7C1B1B171558B300A917B0 /* 5describeATime-question-matt.mp4 */,
+				2C7C1B1C171558B300A917B0 /* 6team-question-matt.mp4 */,
+				2C7C1B1D171558B300A917B0 /* 7whyHireYou-question-matt.mp4 */,
+				2C7C1B1E171558B300A917B0 /* 8anyQuestions-question-matt.mp4 */,
+				2C7C1B1F171558B300A917B0 /* 9farewell-question-matt.mp4 */,
+			);
+			name = Matt;
+			sourceTree = "<group>";
+		};
+		2C7C1AE11715580900A917B0 /* Healthcare */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AE31715581B00A917B0 /* John */,
+				2C7C1AE21715581000A917B0 /* Jeff */,
+			);
+			name = Healthcare;
+			sourceTree = "<group>";
+		};
+		2C7C1AE21715581000A917B0 /* Jeff */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1B081715589600A917B0 /* 1greeting-answer-jeff.mp4 */,
+				2C7C1B091715589600A917B0 /* 2resume-answer-jeff.mp4 */,
+				2C7C1B0A1715589600A917B0 /* 3experience-answer-jeff.mp4 */,
+				2C7C1B0B1715589600A917B0 /* 4previousPosition-answer-jeff.mp4 */,
+				2C7C1B0C1715589600A917B0 /* 5leavingPrevious-answer-jeff.mp4 */,
+				2C7C1B0D1715589600A917B0 /* 6coworkers-answer-jeff.mp4 */,
+				2C7C1B0E1715589600A917B0 /* 7likeAboutHealthcare-answer-jeff.mp4 */,
+				2C7C1B0F1715589600A917B0 /* 8helpOnBreak-answer-jeff.mp4 */,
+				2C7C1B101715589600A917B0 /* 9tellMeATime-answer-jeff.mp4 */,
+				2C7C1B111715589600A917B0 /* 10nightsAndWeekends-answer-jeff.mp4 */,
+				2C7C1B121715589600A917B0 /* 11dressCode-answer-jeff.mp4 */,
+				2C7C1B131715589600A917B0 /* 12schoolValues-answer-jeff.mp4 */,
+				2C7C1B141715589600A917B0 /* 13whyHire-answer-jeff.mp4 */,
+				2C7C1B151715589600A917B0 /* 14anyQuestions-answer-jeff.mp4 */,
+				2C7C1B161715589600A917B0 /* 15farewell-answer-jeff.mp4 */,
+			);
+			name = Jeff;
+			sourceTree = "<group>";
+		};
+		2C7C1AE31715581B00A917B0 /* John */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AF91715587F00A917B0 /* 1greeting-question-john.mp4 */,
+				2C7C1AFA1715587F00A917B0 /* 2resume-question-john.mp4 */,
+				2C7C1AFB1715587F00A917B0 /* 3experience-question-john.mp4 */,
+				2C7C1AFC1715587F00A917B0 /* 4previousPosition-question-john.mp4 */,
+				2C7C1AFD1715587F00A917B0 /* 5leavingPrevious-question-john.mp4 */,
+				2C7C1AFE1715587F00A917B0 /* 6coworkers-question-john.mp4 */,
+				2C7C1AFF1715587F00A917B0 /* 7likeAboutHealthcare-question-john.mp4 */,
+				2C7C1B001715587F00A917B0 /* 8helpOnBreak-question-john.mp4 */,
+				2C7C1B011715587F00A917B0 /* 9tallMeATime-question-john.mp4 */,
+				2C7C1B021715587F00A917B0 /* 10nightsAndWeekends-question-john.mp4 */,
+				2C7C1B031715587F00A917B0 /* 11dressCode-question-john.mp4 */,
+				2C7C1B041715587F00A917B0 /* 12schoolValues-question-john.mp4 */,
+				2C7C1B051715587F00A917B0 /* 13whyHire-question-john.mp4 */,
+				2C7C1B061715587F00A917B0 /* 14anyQuestions-question-john.mp4 */,
+				2C7C1B071715587F00A917B0 /* 15farewell-question-john.mp4 */,
+			);
+			name = John;
+			sourceTree = "<group>";
+		};
+		2C7C1AE41715582100A917B0 /* Hospitality */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AE61715584100A917B0 /* Karen */,
+				2C7C1AE51715583C00A917B0 /* Kathy */,
+			);
+			name = Hospitality;
+			sourceTree = "<group>";
+		};
+		2C7C1AE51715583C00A917B0 /* Kathy */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AE71715585800A917B0 /* 1greeting-answer-kathy.mp4 */,
+				2C7C1AE81715585800A917B0 /* 2resume-answer-kathy.mp4 */,
+				2C7C1AE91715585800A917B0 /* 3aboutYourself-answer-kathy.mp4 */,
+				2C7C1AEA1715585800A917B0 /* 4customerService-answer-kathy.mp4 */,
+				2C7C1AEB1715585800A917B0 /* 5unhappyCustomer-answer-kathy.mp4 */,
+				2C7C1AEC1715585800A917B0 /* 6positiveChange-answer-kathy.mp4 */,
+				2C7C1AED1715585800A917B0 /* 7whyHire-answer-kathy.mp4 */,
+				2C7C1AEE1715585800A917B0 /* 8anyQuestions-answer-kathy.mp4 */,
+				2C7C1AEF1715585800A917B0 /* 9farewell-answer-kathy.mp4 */,
+			);
+			name = Kathy;
+			sourceTree = "<group>";
+		};
+		2C7C1AE61715584100A917B0 /* Karen */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C1AF01715586900A917B0 /* 1greeting-question-karen.mp4 */,
+				2C7C1AF11715586900A917B0 /* 2resume-question-karen.mp4 */,
+				2C7C1AF21715586900A917B0 /* 3aboutYourself-question-karen.mp4 */,
+				2C7C1AF31715586900A917B0 /* 4customerService-question-karen.mp4 */,
+				2C7C1AF41715586900A917B0 /* 5unhappyCustomer-question-karen.mp4 */,
+				2C7C1AF51715586900A917B0 /* 6positiveChange-question-karen.mp4 */,
+				2C7C1AF61715586900A917B0 /* 7whyHire-question-karen.mp4 */,
+				2C7C1AF71715586900A917B0 /* 8anyQuestions-question-karen.mp4 */,
+				2C7C1AF81715586900A917B0 /* 9farewell-question-karen.mp4 */,
+			);
+			name = Karen;
+			sourceTree = "<group>";
+		};
+		2C87CA2B16D6013900EC4294 /* General Interview */ = {
+			isa = PBXGroup;
+			children = (
+				2C87CA2C16D6014700EC4294 /* Kerri & Amanda */,
+			);
+			name = "General Interview";
+			sourceTree = "<group>";
+		};
+		2C87CA2C16D6014700EC4294 /* Kerri & Amanda */ = {
+			isa = PBXGroup;
+			children = (
+				2C87CA3E16D6019B00EC4294 /* Amanda */,
+				2C87CA2D16D6016600EC4294 /* Kerri */,
+			);
+			name = "Kerri & Amanda";
+			sourceTree = "<group>";
+		};
+		2C87CA2D16D6016600EC4294 /* Kerri */ = {
+			isa = PBXGroup;
+			children = (
+				2C87CA2E16D6019000EC4294 /* 1greeting-question-Kerri.mp4 */,
+				2C87CA2F16D6019000EC4294 /* 2resume-question-Kerri.mp4 */,
+				2C87CA3016D6019000EC4294 /* 3aboutYourself-question-Kerri.mp4 */,
+				2C87CA3116D6019000EC4294 /* 4strengths-question-Kerri.mp4 */,
+				2C87CA3216D6019000EC4294 /* 5whyHireYou-question-Kerri.mp4 */,
+				2C87CA3316D6019000EC4294 /* 6anyQuestions-question-Kerri.mp4 */,
+				2C87CA3416D6019000EC4294 /* 7farewell-NO-SHAKE-question-Kerri.mp4 */,
+				2C87CA3516D6019000EC4294 /* 7farewell-SHAKE-question-Kerri.mp4 */,
+			);
+			name = Kerri;
+			sourceTree = "<group>";
+		};
+		2C87CA3E16D6019B00EC4294 /* Amanda */ = {
+			isa = PBXGroup;
+			children = (
+				2C87CA3F16D601B200EC4294 /* 1greeting-answer-Amanda.mp4 */,
+				2C87CA4216D601B200EC4294 /* 2resume-answer-Amanda.mp4 */,
+				2C87CA4016D601B200EC4294 /* 3aboutYourself1-answer-Amanda.mp4 */,
+				2C87CA4116D601B200EC4294 /* 3aboutYourself2-answer-Amanda.mp4 */,
+				2C87CA4316D601B200EC4294 /* 4strengths-answer-Amanda.mp4 */,
+				2C87CA4416D601B200EC4294 /* 5whyHireYou-answer-Amanda.mp4 */,
+				2C87CA4516D601B200EC4294 /* 6myQuestion-answer-Amanda.mp4 */,
+				2C87CA4616D601B200EC4294 /* 7farewell-answer-Amanda.mp4 */,
+			);
+			name = Amanda;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C223A92162142480027B99E /* VidCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C223AB1162142480027B99E /* Build configuration list for PBXNativeTarget "VidCoach" */;
+			buildPhases = (
+				2C223A8F162142480027B99E /* Sources */,
+				2C223A90162142480027B99E /* Frameworks */,
+				2C223A91162142480027B99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VidCoach;
+			productName = videomodel;
+			productReference = 2C223A93162142480027B99E /* VidCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C223A8A162142480027B99E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2C223A8D162142480027B99E /* Build configuration list for PBXProject "VidCoach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C223A88162142480027B99E;
+			productRefGroup = 2C223A94162142480027B99E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C223A92162142480027B99E /* VidCoach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C223A91162142480027B99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C223AA2162142480027B99E /* InfoPlist.strings in Resources */,
+				2C223AAB162142480027B99E /* MainStoryboard.storyboard in Resources */,
+				2CB7AD7E162C74FA00694173 /* Default-568h@2x.png in Resources */,
+				2CF6BE1A1668F61000DF3005 /* Settings.plist in Resources */,
+				2CF6BE1C1668FC5C00DF3005 /* Settings.bundle in Resources */,
+				2C5BD02B1671C82800A68B9E /* TSAlertViewBackground.png in Resources */,
+				2C5BD02C1671C82800A68B9E /* TSAlertViewBackground2.png in Resources */,
+				2C5BD02D1671C82800A68B9E /* TSAlertViewButtonBackground.png in Resources */,
+				2C5BD02E1671C82800A68B9E /* TSAlertViewButtonBackground_Highlighted.png in Resources */,
+				2C5BD02F1671C82800A68B9E /* TSAlertViewCancelButtonBackground.png in Resources */,
+				2C5BD0301671C82800A68B9E /* TSAlertViewMessageListViewShadow.png in Resources */,
+				2CEE4035167316A700A26285 /* TSAlertViewMessageListViewShadow2.png in Resources */,
+				B0699ED116A0837200760D3D /* cog_01.png in Resources */,
+				B0699ED216A0837200760D3D /* cog_01@2x.png in Resources */,
+				B0699ED316A0837200760D3D /* Default.png in Resources */,
+				B0699ED416A0837200760D3D /* house.png in Resources */,
+				B0699ED516A0837200760D3D /* house@2x.png in Resources */,
+				B0699ED616A0837200760D3D /* VidCoach_icon_xcode-ipod.png in Resources */,
+				B0699ED716A0837200760D3D /* VidCoach_icon_xcode.png in Resources */,
+				2C87CA3616D6019000EC4294 /* 1greeting-question-Kerri.mp4 in Resources */,
+				2C87CA3716D6019000EC4294 /* 2resume-question-Kerri.mp4 in Resources */,
+				2C87CA3816D6019000EC4294 /* 3aboutYourself-question-Kerri.mp4 in Resources */,
+				2C87CA3916D6019000EC4294 /* 4strengths-question-Kerri.mp4 in Resources */,
+				2C87CA3A16D6019000EC4294 /* 5whyHireYou-question-Kerri.mp4 in Resources */,
+				2C87CA3B16D6019000EC4294 /* 6anyQuestions-question-Kerri.mp4 in Resources */,
+				2C87CA3C16D6019000EC4294 /* 7farewell-NO-SHAKE-question-Kerri.mp4 in Resources */,
+				2C87CA3D16D6019000EC4294 /* 7farewell-SHAKE-question-Kerri.mp4 in Resources */,
+				2C87CA4716D601B200EC4294 /* 1greeting-answer-Amanda.mp4 in Resources */,
+				2C87CA4816D601B200EC4294 /* 3aboutYourself1-answer-Amanda.mp4 in Resources */,
+				2C87CA4916D601B200EC4294 /* 3aboutYourself2-answer-Amanda.mp4 in Resources */,
+				2C87CA4A16D601B200EC4294 /* 2resume-answer-Amanda.mp4 in Resources */,
+				2C87CA4B16D601B200EC4294 /* 4strengths-answer-Amanda.mp4 in Resources */,
+				2C87CA4C16D601B200EC4294 /* 5whyHireYou-answer-Amanda.mp4 in Resources */,
+				2C87CA4D16D601B200EC4294 /* 6myQuestion-answer-Amanda.mp4 in Resources */,
+				2C87CA4E16D601B200EC4294 /* 7farewell-answer-Amanda.mp4 in Resources */,
+				2C89F8A7171B5B5F008D0FDD /* 1greeting-question-karen.mp4 in Resources */,
+				2C89F8A8171B5B64008D0FDD /* 2resume-question-karen.mp4 in Resources */,
+				2C89F8A9171B5B67008D0FDD /* 3aboutYourself-question-karen.mp4 in Resources */,
+				2C89F8AA171B5B6A008D0FDD /* 4customerService-question-karen.mp4 in Resources */,
+				2C89F8AB171B5B70008D0FDD /* 5unhappyCustomer-question-karen.mp4 in Resources */,
+				2C89F8AC171B5B70008D0FDD /* 6positiveChange-question-karen.mp4 in Resources */,
+				2C89F8AD171B5B70008D0FDD /* 7whyHire-question-karen.mp4 in Resources */,
+				2C89F8AE171B5B70008D0FDD /* 8anyQuestions-question-karen.mp4 in Resources */,
+				2C89F8AF171B5B70008D0FDD /* 9farewell-question-karen.mp4 in Resources */,
+				2C89F8B0171B5B79008D0FDD /* 1greeting-answer-kathy.mp4 in Resources */,
+				2C89F8B1171B5B79008D0FDD /* 2resume-answer-kathy.mp4 in Resources */,
+				2C89F8B2171B5B79008D0FDD /* 3aboutYourself-answer-kathy.mp4 in Resources */,
+				2C89F8B3171B5B79008D0FDD /* 4customerService-answer-kathy.mp4 in Resources */,
+				2C89F8B4171B5B79008D0FDD /* 5unhappyCustomer-answer-kathy.mp4 in Resources */,
+				2C89F8B5171B5B79008D0FDD /* 6positiveChange-answer-kathy.mp4 in Resources */,
+				2C89F8B6171B5B79008D0FDD /* 7whyHire-answer-kathy.mp4 in Resources */,
+				2C89F8B7171B5B79008D0FDD /* 8anyQuestions-answer-kathy.mp4 in Resources */,
+				2C89F8B8171B5B79008D0FDD /* 9farewell-answer-kathy.mp4 in Resources */,
+				2C89F8B9171B5B86008D0FDD /* 1greeting-question-john.mp4 in Resources */,
+				2C89F8BA171B5B86008D0FDD /* 2resume-question-john.mp4 in Resources */,
+				2C89F8BB171B5B86008D0FDD /* 3experience-question-john.mp4 in Resources */,
+				2C89F8BC171B5B86008D0FDD /* 4previousPosition-question-john.mp4 in Resources */,
+				2C89F8BD171B5B86008D0FDD /* 5leavingPrevious-question-john.mp4 in Resources */,
+				2C89F8BE171B5B86008D0FDD /* 6coworkers-question-john.mp4 in Resources */,
+				2C89F8BF171B5B86008D0FDD /* 7likeAboutHealthcare-question-john.mp4 in Resources */,
+				2C89F8C0171B5B86008D0FDD /* 8helpOnBreak-question-john.mp4 in Resources */,
+				2C89F8C1171B5B86008D0FDD /* 9tallMeATime-question-john.mp4 in Resources */,
+				2C89F8C2171B5B86008D0FDD /* 10nightsAndWeekends-question-john.mp4 in Resources */,
+				2C89F8C3171B5B86008D0FDD /* 11dressCode-question-john.mp4 in Resources */,
+				2C89F8C4171B5B86008D0FDD /* 12schoolValues-question-john.mp4 in Resources */,
+				2C89F8C5171B5B86008D0FDD /* 13whyHire-question-john.mp4 in Resources */,
+				2C89F8C6171B5B86008D0FDD /* 14anyQuestions-question-john.mp4 in Resources */,
+				2C89F8C7171B5B86008D0FDD /* 15farewell-question-john.mp4 in Resources */,
+				2C89F8C8171B5B8C008D0FDD /* 1greeting-answer-jeff.mp4 in Resources */,
+				2C89F8C9171B5B8C008D0FDD /* 2resume-answer-jeff.mp4 in Resources */,
+				2C89F8CA171B5B8C008D0FDD /* 3experience-answer-jeff.mp4 in Resources */,
+				2C89F8CB171B5B8C008D0FDD /* 4previousPosition-answer-jeff.mp4 in Resources */,
+				2C89F8CC171B5B8C008D0FDD /* 5leavingPrevious-answer-jeff.mp4 in Resources */,
+				2C89F8CD171B5B8C008D0FDD /* 6coworkers-answer-jeff.mp4 in Resources */,
+				2C89F8CE171B5B8C008D0FDD /* 7likeAboutHealthcare-answer-jeff.mp4 in Resources */,
+				2C89F8CF171B5B8C008D0FDD /* 8helpOnBreak-answer-jeff.mp4 in Resources */,
+				2C89F8D0171B5B8C008D0FDD /* 9tellMeATime-answer-jeff.mp4 in Resources */,
+				2C89F8D1171B5B8C008D0FDD /* 10nightsAndWeekends-answer-jeff.mp4 in Resources */,
+				2C89F8D2171B5B8C008D0FDD /* 11dressCode-answer-jeff.mp4 in Resources */,
+				2C89F8D3171B5B8C008D0FDD /* 12schoolValues-answer-jeff.mp4 in Resources */,
+				2C89F8D4171B5B8C008D0FDD /* 13whyHire-answer-jeff.mp4 in Resources */,
+				2C89F8D5171B5B8C008D0FDD /* 14anyQuestions-answer-jeff.mp4 in Resources */,
+				2C89F8D6171B5B8C008D0FDD /* 15farewell-answer-jeff.mp4 in Resources */,
+				2C89F8D7171B5B98008D0FDD /* 1greeting-question-matt.mp4 in Resources */,
+				2C89F8D8171B5B98008D0FDD /* 2resume-question-matt.mp4 in Resources */,
+				2C89F8D9171B5B98008D0FDD /* 3aboutYourself-question-matt.mp4 in Resources */,
+				2C89F8DA171B5B98008D0FDD /* 4restaurantExperience-question-matt.mp4 in Resources */,
+				2C89F8DB171B5B98008D0FDD /* 5describeATime-question-matt.mp4 in Resources */,
+				2C89F8DC171B5B98008D0FDD /* 6team-question-matt.mp4 in Resources */,
+				2C89F8DD171B5B98008D0FDD /* 7whyHireYou-question-matt.mp4 in Resources */,
+				2C89F8DE171B5B98008D0FDD /* 8anyQuestions-question-matt.mp4 in Resources */,
+				2C89F8DF171B5B98008D0FDD /* 9farewell-question-matt.mp4 in Resources */,
+				2C89F8E0171B5B9E008D0FDD /* 1greeting-answer-bobby.mp4 in Resources */,
+				2C89F8E1171B5B9E008D0FDD /* 2resume-answer-bobby.mp4 in Resources */,
+				2C89F8E2171B5B9E008D0FDD /* 3aboutYourself-answer-bobby.mp4 in Resources */,
+				2C89F8E3171B5B9E008D0FDD /* 4restaurantExperience-answer-bobby.mp4 in Resources */,
+				2C89F8E4171B5B9E008D0FDD /* 5describeATime-answer-bobby.mp4 in Resources */,
+				2C89F8E5171B5B9E008D0FDD /* 6team-answer-bobby.mp4 in Resources */,
+				2C89F8E6171B5B9E008D0FDD /* 7whyHireYou-answer-bobby.mp4 in Resources */,
+				2C89F8E7171B5B9E008D0FDD /* 8anyQuestions-answer-bobby.mp4 in Resources */,
+				2C89F8E8171B5B9E008D0FDD /* 9farewell-answer-bobby.mp4 in Resources */,
+				2C89F8E9171B5BA9008D0FDD /* 1greeting-question-steve.mp4 in Resources */,
+				2C89F8EA171B5BA9008D0FDD /* 2resume-question-steve.mp4 in Resources */,
+				2C89F8EB171B5BA9008D0FDD /* 3experience-question-steve.mp4 in Resources */,
+				2C89F8EC171B5BA9008D0FDD /* 4whyRetail-question-steve.mp4 in Resources */,
+				2C89F8ED171B5BA9008D0FDD /* 5customerService-question-steve.mp4 in Resources */,
+				2C89F8EE171B5BA9008D0FDD /* 6upselling-question-steve.mp4 in Resources */,
+				2C89F8EF171B5BA9008D0FDD /* 7schoolValues-question-steve.mp4 in Resources */,
+				2C89F8F0171B5BA9008D0FDD /* 8whyHire-question-steve.mp4 in Resources */,
+				2C89F8F1171B5BA9008D0FDD /* 9anyQuestions-question-steve.mp4 in Resources */,
+				2C89F8F2171B5BA9008D0FDD /* 11farewell-question-steve.mp4 in Resources */,
+				2C89F8F3171B5BAF008D0FDD /* 1greeting-answer-jessica.mp4 in Resources */,
+				2C89F8F4171B5BAF008D0FDD /* 2resume-answer-jessica.mp4 in Resources */,
+				2C89F8F5171B5BAF008D0FDD /* 3experience-answer-jessica.mp4 in Resources */,
+				2C89F8F6171B5BAF008D0FDD /* 4whyRetail-answer-jessica.mp4 in Resources */,
+				2C89F8F7171B5BAF008D0FDD /* 5customerService-answer-jessica.mp4 in Resources */,
+				2C89F8F8171B5BAF008D0FDD /* 6upselling-answer-jessica.mp4 in Resources */,
+				2C89F8F9171B5BAF008D0FDD /* 7schoolValues-answer-jessica.mp4 in Resources */,
+				2C89F8FA171B5BAF008D0FDD /* 8whyHire-answer-jessica.mp4 in Resources */,
+				2C89F8FB171B5BAF008D0FDD /* 9anyQuestions-answer-jessica.mp4 in Resources */,
+				2C89F8FC171B5BAF008D0FDD /* 11farewell-answer-jessica.mp4 in Resources */,
+				2C89F8FD171B5BB5008D0FDD /* 1greeting-answer-nithin.mp4 in Resources */,
+				2C89F8FE171B5BB5008D0FDD /* 2resume-answer-nithin.mp4 in Resources */,
+				2C89F8FF171B5BB5008D0FDD /* 3experience-answer-nithin.mp4 in Resources */,
+				2C89F900171B5BB5008D0FDD /* 4enjoy-answer-nithin.mp4 in Resources */,
+				2C89F901171B5BB5008D0FDD /* 5leaving-answer-nithin.mp4 in Resources */,
+				2C89F902171B5BB5008D0FDD /* 6coworkers-answer-nithin.mp4 in Resources */,
+				2C89F903171B5BB5008D0FDD /* 7whatDoYouLike-answer-nithin.mp4 in Resources */,
+				2C89F904171B5BB5008D0FDD /* 8customerService-answer-nithin.mp4 in Resources */,
+				2C89F905171B5BB5008D0FDD /* 9upselling-answer-nithin.mp4 in Resources */,
+				2C89F906171B5BB5008D0FDD /* 10tellMeATime-answer-nithin.mp4 in Resources */,
+				2C89F907171B5BB5008D0FDD /* 11schoolValues-answer-nithin.mp4 in Resources */,
+				2C89F908171B5BB5008D0FDD /* 12whyHireYou-answer-nithin.mp4 in Resources */,
+				2C89F909171B5BB5008D0FDD /* 13anyQuestions-answer-nithin.mp4 in Resources */,
+				2C89F90A171B5BB5008D0FDD /* 14farewell-answer-nithin.mp4 in Resources */,
+				2C89F90B171B5BBB008D0FDD /* 1greeting-question-gillian.mp4 in Resources */,
+				2C89F90C171B5BBB008D0FDD /* 2resume-question-gillian.mp4 in Resources */,
+				2C89F90D171B5BBB008D0FDD /* 3experience-question-gillian.mp4 in Resources */,
+				2C89F90E171B5BBB008D0FDD /* 4enjoy-question-gillian.mp4 in Resources */,
+				2C89F90F171B5BBB008D0FDD /* 5leaving-question-gillian.mp4 in Resources */,
+				2C89F910171B5BBB008D0FDD /* 6coworkers-question-gillian.mp4 in Resources */,
+				2C89F911171B5BBB008D0FDD /* 7whatDoYouLike-question-gillian.mp4 in Resources */,
+				2C89F912171B5BBB008D0FDD /* 8customerService-question-gillian.mp4 in Resources */,
+				2C89F913171B5BBB008D0FDD /* 9upselling-question-gillian.mp4 in Resources */,
+				2C89F914171B5BBB008D0FDD /* 10tellMeATime-question-gillian.mp4 in Resources */,
+				2C89F915171B5BBB008D0FDD /* 11schoolValues-question-gillian.mp4 in Resources */,
+				2C89F916171B5BBB008D0FDD /* 12whyHireYou-question-gillian.mp4 in Resources */,
+				2C89F917171B5BBB008D0FDD /* 13anyQuestions-question-gillian.mp4 in Resources */,
+				2C89F918171B5BBB008D0FDD /* 14farewell-question-gillian.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C223A8F162142480027B99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C223AA4162142480027B99E /* main.m in Sources */,
+				2C223AA8162142480027B99E /* AppDelegate.m in Sources */,
+				2C223AAE162142480027B99E /* ViewController.m in Sources */,
+				2CB7AD7A162C74C200694173 /* AVQueuePlayerViewController.m in Sources */,
+				2CB7AD7B162C74C200694173 /* PlayerView.m in Sources */,
+				2C819F5C163307600071576D /* Prompt.m in Sources */,
+				2C819F60163317150071576D /* NSMutableArray_Shuffling.m in Sources */,
+				6F0BCF211641831E000F4874 /* Segment.m in Sources */,
+				B02B63011656D0D7002F06DD /* RecordVideoViewController.m in Sources */,
+				2CAE490116689C200038EAAB /* CategoryViewController.m in Sources */,
+				2CB7B63E1668AAFC00F732A7 /* SubCategoryViewController.m in Sources */,
+				2CB7B6421668B53000F732A7 /* ActionViewController.m in Sources */,
+				2CB7B6451668B87400F732A7 /* SegmentViewController.m in Sources */,
+				2CB7B6481668C46800F732A7 /* SettingsViewController.m in Sources */,
+				2C5BD01C1671C67800A68B9E /* RedCustomAlertView.m in Sources */,
+				2C5BD0291671C82800A68B9E /* GreenCustomAlertView.m in Sources */,
+				2C5BD02A1671C82800A68B9E /* TSAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C223AA0162142480027B99E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C223AA1162142480027B99E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C223AA9162142480027B99E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C223AAA162142480027B99E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C223AAF162142480027B99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C223AB0162142480027B99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C223AB2162142480027B99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "videomodel/VidCoach-Prefix.pch";
+				INFOPLIST_FILE = "videomodel/VidCoach-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = VidCoach;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C223AB3162142480027B99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "videomodel/VidCoach-Prefix.pch";
+				INFOPLIST_FILE = "videomodel/VidCoach-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = VidCoach;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C223A8D162142480027B99E /* Build configuration list for PBXProject "VidCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C223AAF162142480027B99E /* Debug */,
+				2C223AB0162142480027B99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C223AB1162142480027B99E /* Build configuration list for PBXNativeTarget "VidCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C223AB2162142480027B99E /* Debug */,
+				2C223AB3162142480027B99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C223A8A162142480027B99E /* Project object */;
+}
